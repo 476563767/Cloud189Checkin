@@ -7,7 +7,6 @@
 请勿直接修改 .env，然后提交到 github，源码仓库是公开的，别人可以直接看到你的账号密码。因为错误使用本仓库导致账号密码泄漏，并且在使用这个脚本出现账户异常情况，本人概不负责！！！
 如果遇到设备ID不存在，需要二次设备校验，请先参考[这个](https://github.com/wes-lin/Cloud189Checkin/issues/165)关闭自己的设备锁。
 
-
 # **目录**
 
 - [GitHub Action 运行](#GitHubAction运行)
@@ -74,34 +73,34 @@
 ### PushPlus 推送
 
 - `PUSH_PLUS_TOKEN ` _pushPlus 推送 token_
-- 注册和获取 token：https://www.pushplus.plus/uc.html
-- 拿到 token 后，把 PUSH_PLUS_TOKEN 配成你拿到的 token.
-- 免费用户每天有 200 条推送额度
+  - 注册和获取 token：https://www.pushplus.plus/uc.html
+  - 拿到 token 后，把 PUSH_PLUS_TOKEN 配成你拿到的 token.
+  - 免费用户每天有 200 条推送额度
 
 
 ### WPUSH 推送
 
 - `WPUSH_APIKEY ` _WPUSH 推送 API Key_
-- 注册和获取 API Key：https://wpush.cn/settings
-- 拿到 API Key 后，把 WPUSH_APIKEY 配成你拿到的 key.
-- `可选` `WPUSH_CHANNEL` 推送渠道，默认由服务端处理（常用 wechat）；支持 wechat / app / sms / mail / webhook / dingtalk / feishu / wechat_work / clawbot / qqbot 等
-- `可选` `WPUSH_TOPIC_CODE` Topic 广播编码；不填仅发送给自己
-- 官方文档：https://wpush.cn/docs
+  - 注册和获取 API Key：https://wpush.cn/settings
+  - 拿到 API Key 后，把 WPUSH_APIKEY 配成你拿到的 key.
+  - `可选` `WPUSH_CHANNEL` 推送渠道，默认由服务端处理（常用 wechat）；支持 wechat / app / sms / mail / webhook / dingtalk / feishu / wechat_work / clawbot / qqbot 等
+  - `可选` `WPUSH_TOPIC_CODE` Topic 广播编码；不填仅发送给自己
+  - 官方文档：https://wpush.cn/docs
 
 ### ShowDoc 推送
 
 - `SHOWDOC_KEY ` _ShowDoc 推送 key_
-- ShowDoc 官网：https://push.showdoc.com.cn
-- 打开官网，关注公众号，拿到 key 后，把 SHOWDOC_KEY 配成你拿到的 key
-- 使用简单、开箱可用、长期维护、持续免费、编程可玩、不限制消息数量、不限制请求数
+  - ShowDoc 官网：https://push.showdoc.com.cn
+  - 打开官网，关注公众号，拿到 key 后，把 SHOWDOC_KEY 配成你拿到的 key
+  - 使用简单、开箱即用、长期维护、持续免费、可玩
 
 ### Bark 推送 (仅支持 iPhone、iPad、M 芯片 Mac)
 
 - `BARK_KEY ` _Bark 推送 key_
-- Bark 官网：https://bark.day.app/
-- 安装 Bark app，开启通知权限，拿到 key 后，把 BARK_KEY 配成你拿到的 key
-- `可选` 支持自定义 server, 配置成 BARK_SERVER ，默认为官方通道 https://api.day.app
-- 免费、开源、轻量；使用苹果 APNS 服务，及时、稳定、可靠；不会消耗设备的电量，基于系统推送服务与推送扩展，app 本体并不需要运行；隐私安全，可以通过一些方式确保包含作者本人在内的所有人都无法窃取你的隐私
+  - Bark 官网：https://bark.day.app/
+  - 安装 Bark app，开启通知权限，拿到 key 后，把 BARK_KEY 配成你拿到的 key.
+  - `可选` 支持自定义 server, 配置成 BARK_SERVER ，默认为官方通道 https://api.day.app
+  - 免费、开源、轻量；使用苹果 APNS 服务，及时、稳定、可靠；不会消耗设备的电量，基于系统推送服务与推送扩展，app 本体并不需要运行；隐私安全，可以通过一些方式确保包含作者本人在内的所有人都无法窃取你的隐私
 
 ### 执行任务
 
@@ -120,7 +119,6 @@ Actions > Cloud check in action > build
 ### 环境配置
 
 ```
-
 Node.js 18+
 
 ```
